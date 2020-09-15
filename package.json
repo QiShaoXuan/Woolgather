@@ -1,0 +1,23 @@
+{
+  "name": "woolgather",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "publish": "node ./bin/publish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QiShaoXuan/Woolgather.git"
+  },
+  "author": "qi",
+  "license": "ISC",
+  "homepage": "https://github.com/QiShaoXuan/Woolgather#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "log-symbols": "^4.0.0",
+    "ora": "^5.1.0"
+  }
+}
