@@ -7,4 +7,4 @@ TODOs.md
 .idea
 .vscode
 dist
-/bin/private-config.js
+private-config.json
