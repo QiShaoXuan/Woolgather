@@ -1,0 +1,31 @@
+.homepage {
+  height: 100%;
+  position: relative;
+  background-color: #fffffd;
+  background-image: url(./imgs/paper.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    height: 90%;
+    width: 80%;
+    position: relative;
+    &::after {
+      content: "";
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+      background: linear-gradient(
+        0deg,
+        #fffffd 0%,
+        #16697a 10%,
+        #16697a 90%,
+        #fffffd 100%
+      );
+    }
+  }
+}
