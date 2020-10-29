@@ -10,6 +10,7 @@
     height: 90%;
     width: 80%;
     position: relative;
+
     &::after {
       content: "";
       width: 2px;
@@ -26,6 +27,89 @@
         #16697a 90%,
         #fffffd 100%
       );
+    }
+  }
+  .wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .timeline-item {
+    height: auto;
+    max-height: 170px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1c2b2d;
+
+    &:hover {
+      .jump-btn {
+        opacity: 1;
+      }
+    }
+    &:nth-of-type(even) {
+      padding-left: 52%;
+      justify-content: flex-start;
+      .time {
+        padding-left: 20px;
+      }
+      .jump-btn {
+        left: 0;
+        transform: rotate(180deg);
+      }
+    }
+    &:nth-of-type(odd) {
+      padding-right: 52%;
+      justify-content: flex-end;
+      .jump-btn {
+        right: 0;
+      }
+      .time {
+        justify-content: flex-end;
+        padding-right: 20px;
+      }
+    }
+    .timeline-item-wrapper {
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .time {
+      display: flex;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #ffa62b;
+      position: relative;
+    }
+    .jump-btn {
+      position: absolute;
+      top: 4px;
+      height: 12px;
+      display: flex;
+      opacity: 0;
+      transition: opacity 0.2s;
+      img {
+        height: 12px;
+      }
+    }
+    .content {
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 7; //需要显示的行数
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+    h3 {
+      font-size: 1.05em;
     }
   }
 }
